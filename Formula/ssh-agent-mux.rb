@@ -6,6 +6,7 @@ class SshAgentMux < Formula
   desc "Ssh-agent-mux combines multiple agents' keys into a single agent, allowing you t"
   homepage "https://github.com/overhacked/ssh-agent-mux"
   url "https://github.com/overhacked/ssh-agent-mux/archive/refs/tags/v0.1.2.tar.gz"
+  version "0.1.2"
   sha256 "864a264d776777f95b52c470f543e38740aa85be489b0c3d183142220882fe87"
   license "BSD-3-Clause"
 
