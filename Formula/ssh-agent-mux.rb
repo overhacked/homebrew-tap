@@ -39,9 +39,7 @@ class SshAgentMux < Formula
   end
 
   test do
-    agent_pid = shell_output(%Q{nohup ssh-agent-mux --log-level info --config /dev/null --listen "#{testpath}/ssh-agent-mux.sock" > "#{testpath}/ssh-agent-mux.out" & echo $!})
-shell_output(%Q{kill #{agent_pid}})
-agent_stdout = File.read(testpath/"ssh-agent-mux.out")
+    agent_stdout = shell_output(%Q{sock="#{testpath}/ssh-agent-mux.sock"; ssh-agent-mux --log-level info --config /dev/null --listen "$sock" & until [ -e "$sock" ]; do sleep 0.1; done; kill %1; wait %1})
 assert_match %r%Starting agent%, agent_stdout
 assert_match %r%Exiting on SIGTERM%, agent_stdout
   end
