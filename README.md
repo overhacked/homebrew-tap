@@ -16,11 +16,11 @@ brew tap overhacked/tap
 
 ## Installing
 
-To install SSH Agent Mux:
-
-```
-brew install ssh-agent-mux
-```
+<!-- project_table_start -->
+| Project | Description  | Install  |
+| ------------------------------------------ | ------------ | ------------------------ |
+| [ssh-agent-mux](https://github.com/overhacked/ssh-agent-mux) | Combine keys from multiple SSH agents into one agent | `brew install ssh-agent-mux` |        
+<!-- project_table_end -->
 
 ## Updating
 
@@ -28,7 +28,7 @@ Simply run:
 
 ```
 brew update
-brew upgrade ssh-agent-mux
+brew upgrade PROJECT_NAME
 ```
 
 [homebrew]: http://brew.sh/
