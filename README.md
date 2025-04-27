@@ -17,9 +17,9 @@ brew tap overhacked/tap
 ## Installing
 
 <!-- project_table_start -->
-| Project | Description  | Install  |
-| ------------------------------------------ | ------------ | ------------------------ |
-| [ssh-agent-mux](https://github.com/overhacked/ssh-agent-mux) | Combine keys from multiple SSH agents into one agent | `brew install ssh-agent-mux` |        
+| Project                                                      | Description                                        | Install                      |
+| ------------------------------------------------------------ | -------------------------------------------------- | ---------------------------- |
+| [ssh-agent-mux](https://github.com/overhacked/ssh-agent-mux) | Combines multiple agents' keys into a single agent | `brew install ssh-agent-mux` |
 <!-- project_table_end -->
 
 ## Updating
